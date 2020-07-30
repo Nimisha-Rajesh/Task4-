@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang ="en" dir ="ltr">
+    <head>
+        <meta charset ="utf-8">
+        <title></title>
+        <style>
+        .light{
+
+position:absolute ;
+
+top:22%;
+
+left:30%;
+
+right:20%;
+
+bottom:30%;
+
+}
+
+.bulb{
+
+    position:absolute;
+
+    top:55%;
+
+    left:38%;
+
+    right:20%;
+
+    bottom:70%;
+
+}
+        </style>
+        <script>
+        function switch_on()
+{
+
+
+if(document.getElementById('image').src=="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg")
+{
+    document.getElementById('image').src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+}
+
+else 
+{
+ document.getElementById('image').src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+}
+}
+
+        </script>
+    </head>
+    <body>
+    <div class ="light">
+    <img id ="image"src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" alt="">
+    </div>
+    <div class ="bulb">
+    <button onclick="switch_on()" type="button"name="button">SWITCH</button>
+    </div>
+    <script src ="script.js" charset="utf-8"></script>
+    </body>
+</html>
